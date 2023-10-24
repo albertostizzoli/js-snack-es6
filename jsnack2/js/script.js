@@ -1,42 +1,52 @@
-// Recupero gli elementi in pagina
-const display = document.getElementById('display');
+"use strict"
 
 const students = [
     {
-        name:'Marco della Rovere',
-        id: 0,
-        grades: 0
+      id: "213",
+      name: "Marco della Rovere",
+      grades: "78",
     },
     {
-        name:'Paola Cortellessa',
-        id: 0,
-        grades: 0
+      id: "110",
+      name: "Paola Cortellessa",
+      grades: "96",
     },
     {
-        name:'Andrea Mantegna',
-        id: 0,
-        grades: 0
+      id: "250",
+      name: "Andrea Mantegna",
+      grades: "48",
     },
     {
-        name:'Gaia Borromini',
-        id: 0,
-        grades: 0
+      id: "145",
+      name: "Gaia Borromini",
+      grades: "74",
     },
     {
-        name:'Luigi Grimaldello',
-        id: 0,
-        grades: 0
+      id: "196",
+      name: "Luigi Grimaldello",
+      grades: "68",
     },
     {
-        name:'Piero della Francesca',
-        id: 0,
-        grades: 0
+      id: "102",
+      name: "Piero della Francesca",
+      grades: "50",
     },
     {
-        name:'Francesca da Polenta',
-        id: 0,
-        grades: 0
+      id: "120",
+      name: "Francesca da Polenta",
+      grades: "84",
     },
-];
+  ];
+  
+  const studentNames = students.map((student) => student.name.toUpperCase());
+  
+  const upper = students.filter((student) => student.grades > 70);
+  
+  const newList = students.filter(
+    (student) => student.grades > 70 && student.id > 120
+  );
+  
+  console.log(students, studentNames);
+  console.log(upper, newList);
 
-console.log(students);
+  
