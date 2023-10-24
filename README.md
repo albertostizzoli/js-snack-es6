@@ -1,6 +1,6 @@
 ESERCIZIO DI OGGI: SNACK ARRAY METHODS
 
-SNACK 1
+SNACK 1:
 Dwayne Johnson ci ha chiesto di creare i segnaposto per il tavolo degli invitati alla sua mega festa vip.
 Ci ha lasciato il nome del tavolo ("Tavolo Vip") e la lista degli invitati in ordine di posto:
 [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
@@ -13,7 +13,7 @@ POSTO OCCUPATO(place);
 Generiamo e stampiamo in console la lista per i segnaposto.
 
 
-SNACK 2
+SNACK 2:
 Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
 ES (Marco della Rovere => MARCO DELLA ROVERE);
