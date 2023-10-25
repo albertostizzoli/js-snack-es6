@@ -2,38 +2,40 @@
 const listaBici = [
     {
         nome: 'Bianchi',
-        peso: 15
+        peso: 14
     },
     {
         nome: 'Cannondale',
-        peso: 18
-    },
-    {
-        nome: 'Santa Cruz',
         peso: 10
     },
     {
+        nome: 'Santa Cruz',
+        peso: 15
+    },
+    {
         nome: 'Megamo',
-        peso: 7
+        peso: 8
     },
     {
         nome: 'DinoBikes',
-        peso: 9
+        peso: 7
     },
+
 ];
 
 console.log(listaBici);
 
-// Con un forEach e un filter trovo la bici con il peso minore all'interno della lista
-const pesoMinore = [];
+//Con un forEach e un filter trovo la bici che pesa di meno nella lista
+
+const lowerBike = [];
 listaBici.forEach((element, index)=> {
     const {peso} = listaBici[index];
-    pesoMinore.push(peso);
+    lowerBike.push(peso);
 })
-const lowerBike = listaBici.filter((element)=>{
-    return element.nome && element.peso === Math.min(...min);
+const newBike = listaBici.filter((element)=>{
+    return element.nome && element.peso === Math.min(...lowerBike);
 });
 
-// Infine stampo in console la bici che pesa di meno
-console.log(`La bici che pesa di meno è: ${lowerBike[0].nome} e pesa ${lowerBike[0].peso}kg`);
+// Stampo in console la bici che pesa di meno
+console.log(`La bici che pesa di meno è: ${newBike[0].nome} e pesa ${newBike[0].peso}kg`);
 
