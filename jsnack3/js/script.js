@@ -38,4 +38,3 @@ const newBike = listaBici.filter((element)=>{
 
 // Stampo in console la bici che pesa di meno
 console.log(`La bici che pesa di meno è: ${newBike[0].nome} e pesa ${newBike[0].peso}kg`);
-
